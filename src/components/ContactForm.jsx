@@ -4,10 +4,10 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import * as z from "zod";
 import emailjs from "@emailjs/browser"; // Import EmailJS
 import { Mail, Phone, MapPin, Send } from "lucide-react";
-import { Button } from "./ui/Button";
-import { Input } from "./ui/Input";
-import { Textarea } from "./ui/Textarea";
-import { useToast } from "../hooks/use-toast";
+import { Button } from "./ui/Button.jsx";
+import { Input } from "./ui/Input.jsx";
+import { Textarea } from "./ui/Textarea.jsx";
+import { useToast } from "../hooks/use-toast.js";
 import {
   Form,
   FormControl,
@@ -15,7 +15,7 @@ import {
   FormItem,
   FormLabel,
   FormMessage,
-} from "./ui/Form";
+} from "./ui/Form.jsx";
 import karan from '../assets/Karan.png'
 const formSchema = z.object({
   name: z.string().min(2, "Name must be at least 2 characters").max(100),

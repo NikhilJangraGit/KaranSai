@@ -1,5 +1,5 @@
 import { Video, PlaySquare, Camera, Film, Zap, Sparkles,Megaphone } from "lucide-react";
-import { Card, CardContent } from "./ui/card";
+import { Card, CardContent } from "./ui/card.jsx";
 
 const Services = () => {
   const services = [
