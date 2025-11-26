@@ -17,6 +17,7 @@ import {
   FormMessage,
 } from "./ui/Form.jsx";
 import karan from '../assets/Karan.png'
+import karan2 from '../assets/karan2.png'
 const formSchema = z.object({
   name: z.string().min(2, "Name must be at least 2 characters").max(100),
   email: z.string().email("Invalid email address").max(255),
@@ -149,10 +150,17 @@ const ContactForm = () => {
                 </div>
 
                 {/* --- IMAGE SECTION --- */}
-                <div className="w-full md:w-1/3 flex justify-center md:justify-end">
-                  <div className="relative w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden border-4 border-primary/20 shadow-lg">
+                <div className="w-full md:w-1/3 flex-wrap flex md:flex-col center justify-around md:justify-end">
+                  <div className="relative w-32 h-32 md:w-30 md:h-30 rounded-full overflow-hidden border-4 md:mb-4 md:ml-5 border-primary/20 shadow-lg">
                     <img
                       src= {karan}
+                      alt="Profile"
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                   <div className="relative w-32 h-32 md:w-30 md:h-30 rounded-full overflow-hidden border-4 md:mt-4 md:ml-5 border-primary/20 shadow-lg">
+                    <img
+                      src= {karan2}
                       alt="Profile"
                       className="w-full h-full object-cover"
                     />
